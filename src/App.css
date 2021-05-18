@@ -17,4 +17,28 @@
 #root,#root>div,body,html{height:100%;margin:0;padding:0}
 main {
     padding-top: 100px;
+    position: relative;
+}
+.gameOver {
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    color: #fff;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 10%;
+    position: absolute;
+    text-align: center;
+    text-shadow: 3px 3px 5px #2c323c;
+    transition: all 1s ease-out;
+    width: 100%;
+}
+.gameOver.show {
+    opacity: 1;
+    z-index: 2;
+}
+.gameOver.hide {
+    opacity: 0;
+    max-height: 0;
+    max-width: 0;
+    z-index: 0;
 }
